@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.communityappmobile.services.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.communityappmobile.services.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_alerts"
+        android:name="com.example.communityappmobile.services.ui.alerts.AlertsFragment"
+        android:label="Alerts"
+        tools:layout="@layout/fragment_alerts" />
+
+
+    <fragment
+        android:id="@+id/navigation_log_in"
+        android:name="com.example.communityappmobile.services.ui.auth.LogInFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_log_in" />
+    <fragment
+        android:id="@+id/navigation_sign_up"
+        android:name="com.example.communityappmobile.services.ui.auth.SignUpFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/navigation_issues"
+        android:name="com.example.communityappmobile.services.ui.issues.IssuesFragment"
+        android:label="@string/title_issues"
+        tools:layout="@layout/fragment_issues" />
+
+    <fragment
+        android:id="@+id/navigation_report_issue"
+        android:name="com.example.communityappmobile.services.ui.issues.ReportIssueFragment"
+        android:label="@string/title_report_issue"
+        tools:layout="@layout/fragment_report_issue" />
+
+    <fragment
+        android:id="@+id/navigation_issue_location"
+        android:name="com.example.communityappmobile.services.ui.issues.IssueLocationFragment"
+        android:label="Location"
+        tools:layout="@layout/fragment_issue_location" />
+
+    <fragment
+        android:id="@+id/navigation_issue_details"
+        android:name="com.example.communityappmobile.services.ui.issues.IssueDetailsFragment"
+        android:label="Issue Details"
+        tools:layout="@layout/fragment_issue_details" />
+
+    <fragment
+        android:id="@+id/navigation_issue_chat"
+        android:name="com.example.communityappmobile.services.ui.issues.IssueChatFragment"
+        android:label="Chat With Institutions"
+        tools:layout="@layout/fragment_issue_chat" />
+
+    <fragment
+        android:id="@+id/navigation_events"
+        android:name="com.example.communityappmobile.services.ui.events.EventsFragment"
+        android:label="@string/title_events"
+        tools:layout="@layout/fragment_events" />
+
+    <fragment
+        android:id="@+id/navigation_event_details"
+        android:name="com.example.communityappmobile.services.ui.events.EventDetailsFragment"
+        android:label="Event Details"
+        tools:layout="@layout/fragment_event_details" />
+
+    <fragment
+        android:id="@+id/navigation_my_events"
+        android:name="com.example.communityappmobile.services.ui.events.MyEventsFragment"
+        android:label="My Events"
+        tools:layout="@layout/fragment_my_events" />
+
+    <fragment
+        android:id="@+id/navigation_favorite_events"
+        android:name="com.example.communityappmobile.services.ui.events.FavoriteEventsFragment"
+        android:label="Favorites"
+        tools:layout="@layout/fragment_favorite_events" />
+
+    <fragment
+        android:id="@+id/navigation_create_event"
+        android:name="com.example.communityappmobile.services.ui.events.CreateEventFragment"
+        android:label="Create Event"
+        tools:layout="@layout/fragment_create_event" />
+
+    <fragment
+        android:id="@+id/navigation_institutions"
+        android:name="com.example.communityappmobile.services.ui.institutions.InstitutionsFragment"
+        android:label="@string/title_institutions"
+        tools:layout="@layout/fragment_institutions" />
+
+    <fragment
+        android:id="@+id/navigation_institution_details"
+        android:name="com.example.communityappmobile.services.ui.institutions.InstitutionDetailsFragment"
+        android:label="Institution Details"
+        tools:layout="@layout/fragment_institution_details" />
+
+    <fragment
+        android:id="@+id/navigation_facilities"
+        android:name="com.example.communityappmobile.services.ui.facilities.FacilitiesFragment"
+        android:label="@string/title_facilities"
+        tools:layout="@layout/fragment_facilities"/>
+
+
+    <fragment
+        android:id="@+id/navigation_news"
+        android:name="com.example.communityappmobile.services.ui.news.NewsFragment"
+        android:label="@string/title_news"
+        tools:layout="@layout/fragment_news" />
+
+    <fragment
+        android:id="@+id/navigation_news_details"
+        android:name="com.example.communityappmobile.services.ui.news.NewsDetailsFragment"
+        android:label="News Details"
+        tools:layout="@layout/fragment_news_details" />
+
+    <fragment
+        android:id="@+id/navigation_facility_details"
+        android:name="com.example.communityappmobile.services.ui.facilities.FacilityDetailsFragment"
+        android:label="Facility Details"
+        tools:layout="@layout/fragment_facility_details"/>
+        <!-- Additional fragment attributes and child elements -->
+
+</navigation>

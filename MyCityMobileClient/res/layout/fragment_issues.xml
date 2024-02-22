@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/issuesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="55dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/report_issue_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="72dp"
+        app:fabSize="normal"
+        android:src="@drawable/plus"
+        android:tint="@color/white"
+        android:contentDescription="@string/report_issue_button"
+        app:layout_anchor="@id/issuesRecyclerView"
+        app:layout_anchorGravity="bottom|end" />
+
+    <TextView
+        android:id="@+id/issues_helper_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"
+        android:layout_margin="30dp"
+        android:textAlignment="center"
+        app:layout_anchor="@id/issuesRecyclerView"
+        app:layout_anchorGravity="center"
+        android:text="@string/in_this_section_you_can_view_the_issues_you_have_submitted"
+        android:visibility="gone" />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
